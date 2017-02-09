@@ -5,7 +5,7 @@ if (!class_exists('SYN2017X')){
         public function __construct(){
              add_action('after_setup_theme', array($this, 'init'));
              // register action/filter callbacks here
-             add_action( 'wp_enqueue_scripts', 'enqueue_styles' );
+             add_action( 'wp_enqueue_scripts', array($this,'enqueue_styles' ));
              add_action( 'wp_head', array($this,'add_notes_feed'));
 
 
