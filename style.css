@@ -10,5 +10,10 @@
  Text Domain:  wp-synesthesia2017x
 */
 
-@import url(./assets/css/style.css);
+/*
+This file is only here to keep WordPress happy
+In code we queue the stylesheet in assets/css/style.css
+
+*/
+
 
