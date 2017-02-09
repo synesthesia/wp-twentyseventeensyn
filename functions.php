@@ -15,6 +15,7 @@ if (!class_exists('SYN2017X')){
             // all theme init code here
         }
 
+        //TODO this is site-specific so should go to a plugin
         public function add_notes_feed(){
             $feed = 'http://wikity.synesthesia.co.uk/feed/';
             $title = 'Synesthesia Notes » Feed';
@@ -40,29 +41,3 @@ if (class_exists('SYN2017X')){
     $synesthesia2017x = new SYN2017X();
 }
 
-/*
-// Header options
-
-add_action( 'wp_head', 'syn_add_notes_feed');
-
-function syn_add_notes_feed(){
-    $feed = 'http://wikity.synesthesia.co.uk/feed/';
-    $title = 'Notes >> Feed';
-    printf(__('<link rel="%1$s" type="%2$s" title="%4$s" href="%3$s" />'),"alternate","application/rss+xml",$feed, $title);
-    
-}
-
-// Scripts and styles
-function syn_enqueue_styles() {
-
-    $parent_style = 'twentyseventeen-style';
-    wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
-    wp_enqueue_style( 'child-style',
-        get_stylesheet_directory_uri() . '/assets/css/style.css',
-        array( $parent_style ),
-        wp_get_theme()->get('Version')
-    );
-}
-
-add_action( 'wp_enqueue_scripts', 'syn_enqueue_styles' );
-*/
