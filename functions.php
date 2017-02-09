@@ -17,7 +17,7 @@ if (!class_exists('SYN2017X')){
 
         public function add_notes_feed(){
             $feed = 'http://wikity.synesthesia.co.uk/feed/';
-            $title = 'Notes >> Feed';
+            $title = 'Synesthesia Notes » Feed';
             printf(__('<link rel="%1$s" type="%2$s" title="%4$s" href="%3$s" />'),"alternate","application/rss+xml",$feed, $title);
             
         }
