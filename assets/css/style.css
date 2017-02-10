@@ -2,3 +2,6 @@
 /* use this to override parent theme styles */
 li {
   margin-left: 1em; }
+
+p.cc-block {
+  font-size: 80%; }
